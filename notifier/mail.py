@@ -78,10 +78,10 @@ class Notifier(object):
         mail_message += self.fetch_logfile_data()
 
         body = """From: {0}
-    To: {1}
-    Subject: {2}
-    
-    {3}""".format(mail_from, mail_to, mail_subject, mail_message)
+To: {1}
+Subject: {2}
+
+{3}""".format(mail_from, mail_to, mail_subject, mail_message)
         return body
 
     # Fetching the log file data to be sent with the notification message
