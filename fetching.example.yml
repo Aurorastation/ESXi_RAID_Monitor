@@ -1,0 +1,12 @@
+file:
+  path: /path/to/files
+  prefix: name_prefix
+  maxage: 2700
+ssh:
+  host: esxi_ip
+  user: root
+  password: password
+  path_megacli: /opt/lsi/MegaCLI/
+  get_ld: ./MegaCli -ldinfo -l{0} -aall | egrep "Virtual Drive:|State|Number Of Drives"
+  get_pd: ./MegaCli -pdInfo -PhysDrv[{0}:{1}] -aAll | egrep "Enclosure Device ID:|Slot Number:|Inquiry Data:|Error Count:|state|failure|temperature|has flagged|Firmware state"
+  get_adapter: ./MegaCli -adpallinfo -aall | egrep "Adapter \#|Product Name|FW Version|Memory Correctable Errors|Memory Uncorrectable Errors"

@@ -1,0 +1,13 @@
+mail:
+  level_minimum: 10
+  level_required: 50
+  password: mail_password
+  port: 25
+  recipients: [receiver@example.com]
+  sender: monitor@example.com
+  server: mail.example.com
+  time_interval: 600
+  time_last: 0
+  user: mail_user
+send_logfile: true
+server_name: Server Name

@@ -1,0 +1,6 @@
+.idea
+fetching.yml
+logging.yml
+notification.yml
+*.log
+*.log.*
